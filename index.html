@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>Address Book</title>
+    <link rel="icon" type="icon" href="./img/icon.png">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <header class="header">
+            <h1 class="header__title">
+                Address Book
+            </h1>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="main__toolbar">
+                    <div class="main__toolbar-operation">
+                        <div class="main__toolbar-search">
+                            <div class="main__toolbar-search-title">
+                                Search
+                            </div>
+                            <input type="text" class="main__toolbar-search-input"
+                                placeholder="Search by full name..." id="search_input"/>
+                            <button class="main__toolbar-search-btn" id="search_btn">Search</button>
+                        </div>
+                        <div class="main__toolbar-operation-controlPanel">
+                            <div class="main__toolbar-operation-items">
+                                <div class="main__toolbar-operation-itemAdd main__toolbar-operation-addItem-action"
+                                    id="add">Add</div>
+                                <div class="main__toolbar-operation-itemDel" id="delete">Delete</div>
+                            </div>
+                            <div class="main__toolbar-operation-delete">
+                                <div class="main__toolbar-operation-delete-fullName">
+                                    <div class="main__toolbar-operation-delete-title">Enter full name for delete people
+                                    </div>
+                                    <input type="text" class="main__toolbar-operation-delInput" id="del_fullName"
+                                        placeholder="Full Name...">
+                                </div>
+                                <button class="main__toolbar-operation-delete-btn" id="del_btn">
+                                    Delete
+                                </button>
+                            </div>
+                            <div class="main__toolbar-operation-add">
+                                <div class="main__toolbar-operation-add-fullName">
+                                    <div class="main__toolbar-operation-add-title">Enter full name</div>
+                                    <input type="text" class="main__toolbar-operation-addInput" id="add_fullName"
+                                        placeholder="Full Name...">
+                                </div>
+                                <div class="main__toolbar-operation-add-homeAddress">
+                                    <div class="main__toolbar-operation-add-title">Enter home address</div>
+                                    <input type="text" class="main__toolbar-operation-addInput" id="add_homeAddress"
+                                        placeholder="Dom Address...">
+                                </div>
+                                <div class="main__toolbar-operation-add-workAddress">
+                                    <div class="main__toolbar-operation-add-title">Enter work address</div>
+                                    <input type="text" class="main__toolbar-operation-addInput" id="add_workAddress"
+                                        placeholder="Work Address...">
+                                </div>
+                                <div class="main__toolbar-operation-add-phone">
+                                    <div class="main__toolbar-operation-add-title">Enter phone</div>
+                                    <input type="text" class="main__toolbar-operation-addInput" id="add_phone"
+                                        placeholder="Phone...">
+                                </div>
+                                <div class="main__toolbar-operation-add-info">
+                                    <div class="main__toolbar-operation-add-title">Enter information about yourself
+                                    </div>
+                                    <input type="text" class="main__toolbar-operation-addInput" id="add_info"
+                                        placeholder="Info...">
+                                </div>
+                                <button class="main__toolbar-operation-add-btn" id="add_btn">
+                                    Add
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="main__window">
+                    <div class="main__window-table">
+                        <div class="main__window-table-row main__window-table-row--header">
+                            <div class="main__window-table-cell">Full Name</div>
+                            <div class="main__window-table-cell">Dom Address</div>
+                            <div class="main__window-table-cell">Work Address</div>
+                            <div class="main__window-table-cell">Phone</div>
+                            <div class="main__window-table-cell">Info</div>
+                        </div>
+                        <div class="table-wrapper">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+</body>
+<script src="./renderer.js"></script>
+
+</html>

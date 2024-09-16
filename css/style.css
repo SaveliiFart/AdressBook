@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  /* overflow: hidden; */
+}
+
+.wrapper {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.header__title {
+  font-weight: 900;
+  font-size: 48px;
+  text-align: center;
+}
+.main {
+  max-width: 100%;
+  max-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.main__toolbar {
+  width: 600px;
+  max-width: 100%;
+}
+
+.main__toolbar-search {
+  border: 2px solid #000;
+  border-bottom: 0;
+}
+
+.main__toolbar-search-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.main__toolbar-search-input {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main__toolbar-search-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 25px auto;
+  margin-bottom: 0;
+}
+
+.main__toolbar-search-btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.main__toolbar-operation-items {
+  border: 2px solid #000;
+  border-top: 0;
+  border-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 25px;
+}
+.main__toolbar-operation-itemAdd,
+.main__toolbar-operation-itemDel {
+  cursor: pointer;
+}
+
+.main__toolbar-operation-itemDel:hover {
+  text-decoration: underline;
+}
+
+.main__toolbar-operation-itemAdd:hover {
+  text-decoration: underline;
+}
+
+.main__toolbar-operation-addItem-action {
+  color: green;
+  text-decoration: underline;
+}
+
+.main__toolbar-operation-deleteItem-action {
+  color: red;
+  text-decoration: underline;
+}
+
+.main__toolbar-operation-add {
+  display: block;
+  border: 2px solid #000;
+  border-top: 0;
+}
+
+.main__toolbar-operation-delete {
+  display: none;
+  border: 2px solid #000;
+  border-top: 0;
+}
+.main__toolbar-operation-delete-title {
+  font-size: 24px;
+  font-weight: 500;
+  padding: 10px 0;
+  text-align: center;
+}
+.main__toolbar-operation-delInput {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main__toolbar-operation-delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 25px auto;
+  margin-bottom: 430px;
+}
+
+.main__toolbar-operation-delete-btn:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.main__toolbar-operation-add {
+  padding-top: 10px;
+}
+
+.main__toolbar-operation-add-title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.main__toolbar-operation-addInput {
+  display: flex;
+  margin: 0 auto;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.main__toolbar-operation-add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  width: 400px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  color: #fff;
+  margin: 24px auto;
+}
+
+.main__toolbar-operation-add-btn:hover {
+  background-color: green;
+  color: #fff;
+}
+
+.main__window {
+  max-width: 100%;
+  max-height: 100vh;
+  border: 2px solid #000;
+  border-bottom: 0;
+  border-right: 0;
+}
+
+.main__window-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.main__window-table-row {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.main__window-table-cell {
+  width: 245px;
+  flex: 1;
+  padding: 10px;
+}
+
+.main__window-table-row--header {
+  font-weight: bold;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #000;
+}
